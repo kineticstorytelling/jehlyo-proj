@@ -3,12 +3,18 @@ const router = express.Router()
 
 // Getting all
 router.get('/', (req, res) =>{
-    
+
 })
 
 // Getting one
+router.get('/:id', (req, res) =>{
+    req.params.id
+})
 
 // Creating one
+router.post('/', (req, res) => {
+
+})
 
 // Updating one
 
