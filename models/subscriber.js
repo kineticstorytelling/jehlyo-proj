@@ -15,3 +15,5 @@ const subscriberSchema = new mongoose.Schema({
         default: Date.now
     }
 })
+
+module.exports = mongoose.model('Subscriber', subscriberSchema) //model allows us to interact directly with the database using the schema
