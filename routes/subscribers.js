@@ -17,6 +17,9 @@ router.post('/', (req, res) => {
 })
 
 // Updating one
+router.patch('/', (req, res) => {
+    
+}
 
 // Deleting one
 
