@@ -46,9 +46,7 @@ async function getSubscriber(req, res, next) {
         if (subscriber == null) {
             return res.status(404)
         }
-    } catch (err) {
-        
-    }
+    } catch (err) {}
 }
 
 module.exports = router
