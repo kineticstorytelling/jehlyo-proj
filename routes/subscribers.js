@@ -44,7 +44,7 @@ async function getSubscriber(req, res, next) {
     try {
         subscriber = await Subscriber.findById(req.params.id)
         if (subscriber == null) {
-            return res.status(404).json()
+            return res.status(404).json({ message: 'Cannot find subscriber' })
         }
     } catch (err) {
 
