@@ -44,9 +44,11 @@ async function getSubscriber(req, res, next) {
     try {
         subscriber = await Subscriber.findById(req.params.id)
         if (subscriber == null) {
-            return res.status(404)
+            return res.status(404).json()
         }
-    } catch (err) {}
+    } catch (err) {
+
+    }
 }
 
 module.exports = router
